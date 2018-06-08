@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block body %}
+  <ul class=entries>
+  {% for entry in entries %}
+    <li style="margin-top: 10px;">
+        <p>
+            <a href="{{ entry.url }}" target="_blank" style="text-decoration: none;">{{loop.index}}. {{ entry.title }}</a>
+            <em style="font-size: 12px; color: #666;">[{{ entry.source }} {{ entry.category }} {{ entry.created_at }}]</em>
+        </p>
+    </li>
+    <li>
+        <div>
+
+        </div>
+    </li>
+  {% else %}
+      <li><em>Unbelievable.  No entries here so far</em></li>
+  {% endfor %}
+  </ul>
+{% endblock %}
+
