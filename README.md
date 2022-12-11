@@ -1,8 +1,8 @@
 # FutureNews
 
-#### 1. 创建数据库
+#### 1. 设置数据库
 ```
-mysql> create database future_news default charset utf8;
+编辑 settings.py
 ```
 
 #### 2. 配置settings.py
